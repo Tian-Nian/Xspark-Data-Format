@@ -20,8 +20,8 @@ Key goals:
 
 | Format | Version | Storage | Best for | Document | Loader |
 |------:|:-------:|:--------|:---------|:---------|:------|
-| Xspark Data Format | v1.0 | Single **HDF5** (all modalities) | unified robotics datasets / cross-embodiment training | [data format document](./format/xspark_data_format_v1.0/README.md) | [dataloader](./format/xspark_data_format_v1.0/dataloader.py) |
-| X-Ego Format | v0.1 | Multi-file (**MP4** + **JSON**) | video-based X-Ego data & hand predictions | [data format document](./format/x-ego_v0.1/README.md) | [dataloader](./format/x-ego_v0.1/dataloader.py) |
+| Xspark Data Format | v1.0 | Single **HDF5** (all modalities) | unified robotics datasets / cross-embodiment training | [Doc](./format/xspark_data_format_v1.0/README.md) | [dataloader](./format/xspark_data_format_v1.0/dataloader.py) |
+| X-Ego Data Format | v0.1 | Multi-file (**MP4** + **JSON**) | video-based X-Ego data & hand predictions | [Doc](./format/x-ego_v0.1/README.md) | [dataloader](./format/x-ego_v0.1/dataloader.py) |
 
 ---
 
@@ -35,10 +35,10 @@ Key goals:
 
 ---
 
-## X-Ego Format v0.1
+## X-Ego Data Format v0.1
 
-> X-Ego Format v0.1 is designed for video-based X-Ego data stored in multiple files: visual observations are saved as MP4 videos at different resolutions, and additional JSON files store hand predictions and captions.<br> 
-> X-Ego Format v0.1 面向 Video-based 的 X-Ego 数据，采用多文件存储：不同分辨率的视觉观测以 MP4 文件保存，并使用额外的 JSON 文件存储手部预测与 caption 等信息。
+> X-Ego Data Format v0.1 is designed for video-based X-Ego data stored in multiple files: visual observations are saved as MP4 videos at different resolutions, and additional JSON files store hand predictions and captions.<br> 
+> X-Ego Data Format v0.1 面向 Video-based 的 X-Ego 数据，采用多文件存储：不同分辨率的视觉观测以 MP4 文件保存，并使用额外的 JSON 文件存储手部预测与 caption 等信息。
 
 - 📄 **Data Format Document**: [data format document](./format/x-ego_v0.1/README.md)
 - 🧩 **Data Loader Code**: [dataloader](./format/x-ego_v0.1/dataloader.py)
