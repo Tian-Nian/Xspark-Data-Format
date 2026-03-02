@@ -57,6 +57,6 @@ Records synchronized joint positions and end-effector cartesian poses.
 | Path | Value Example | Description |
 | :--- | :--- | :--- |
 | `additional_info/frequency` | `30` | Recording and control loop frequency (Hz). |
-| `instructions` | `["Fold the white towel"]` | Human language instruction for the episode. |
+| `instructions` | `["Fold the white towel."]` | Human language instruction for the episode. |
 | `subtasks` | `[[[0, 600], "Flatten the clothes."], [[601, 1000], "Fold the clothes."]]` | List of discrete sub-steps for long-horizon tasks. |
 | `data_format_version` | `"v1.0"` | Current schema version. |
