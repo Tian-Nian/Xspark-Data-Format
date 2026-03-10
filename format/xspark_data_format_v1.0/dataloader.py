@@ -31,7 +31,9 @@ def load_xspark_data(hdf5_path, decode_images=True):
                     d[key] = np.array(decoded_frames)
                     continue
 
-                if isinstance(val, (bytes, np.bytes_, np.ndarray)) and (val.dtype.kind in ['S', 'U']):
+                if isinstance(val, (bytes, np.bytes_)) or (
+                    isinstance(val, np.ndarray) and val.dtype.kind in ["S", "U"]
+                ):
                     try:
                         if isinstance(val, np.ndarray) and val.size == 1:
                             val_item = val.item()
